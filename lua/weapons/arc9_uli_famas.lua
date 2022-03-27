@@ -25,13 +25,13 @@ SWEP.Credits = {
 
 if ARC9:UseTrueNames() then
 
-SWEP.Description = [[A cheap option for cash-strapped players, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs.]]
+SWEP.Description = [[A cheap option for cash-strapped units, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs.]]
 
 SWEP.PrintName = SWEP.TrueName
 
 else
 
-SWEP.Description = [[A cheap option for cash-strapped players, the Clarion 5.56 effectively fills the niche between more expensive rifles and the less-effective SMGs.]]
+SWEP.Description = [[A cheap option for cash-strapped units , the Clarion 5.56 effectively fills the niche between more expensive rifles and the less-effective SMGs.]]
 
 end
 
