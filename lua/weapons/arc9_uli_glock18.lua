@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Ultralight"
 
 SWEP.PrintName = "9x19mm Sidearm"
-SWEP.TrueName = "Glock"
+SWEP.TrueName = "Glock 18"
 
 SWEP.Class = "Handgun"
 SWEP.Trivia = {
