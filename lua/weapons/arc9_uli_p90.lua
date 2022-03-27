@@ -26,13 +26,13 @@ SWEP.Credits = {
 
 if ARC9:UseTrueNames() then
 
-SWEP.Description = [[“Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil. Two-stage trigger makes it easier to shoot semi-automatically while in full auto.]]
+SWEP.Description = [[“Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil.]]
 
 SWEP.PrintName = SWEP.TrueName
 
 else
 
-SWEP.Description = [[“Easily recognizable for its unique bullpup design, the C90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil. Two-stage trigger makes it easier to shoot semi-automatically while in full auto.]]
+SWEP.Description = [[“Easily recognizable for its unique bullpup design, the C90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil.]]
 
 end
 
@@ -42,7 +42,7 @@ SWEP.WorldModel = "models/weapons/w_smg_p90.mdl"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/cstrike/c_smg_p90.mdl"
+SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_smg_p90.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-19, 8, -6),
     Ang = Angle(-5, 0, 180),
@@ -97,7 +97,6 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
-        RPMMultFirstShot = 0.5
     },
     {
         Mode = 1
