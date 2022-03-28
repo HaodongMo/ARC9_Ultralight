@@ -43,6 +43,7 @@ SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_shot_m3super90.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-10, 8, -7),
     Ang = Angle(-5, 0, 180),
@@ -189,6 +190,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(26, 32, 6)
 SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
 

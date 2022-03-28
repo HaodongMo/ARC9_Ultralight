@@ -8,7 +8,7 @@ SWEP.Category = "ARC-9 - Ultralight"
 SWEP.PrintName = "Ingram MAC-10"
 SWEP.TrueName = "MAC-10"
 
-SWEP.Class = "Handgun"
+SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     ["Country of Origin"] = "United States of America",
     ["Caliber"] = ".45 ACP",
@@ -33,7 +33,7 @@ SWEP.PrintName = SWEP.TrueName
 end
 
 SWEP.ViewModel = "models/weapons/cstrike/c_smg_mac10.mdl"
-SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
+SWEP.WorldModel = "models/weapons/w_smg_mac10.mdl"
 
 SWEP.Slot = 2
 
@@ -63,7 +63,7 @@ SWEP.Penetration = 3 -- Units of wood that can be penetrated by this gun.
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 11000
+SWEP.PhysBulletMuzzleVelocity = 9000
 
 -------------------------- MAGAZINE
 
@@ -167,13 +167,14 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-10.1, -12, 1.55),
-    Ang = Angle(-5.5, 0.25, -7.25),
+    Pos = Vector(-5, -12, 1),
+    Ang = Angle(0, 0, -5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
     },
     Magnification = 1.1,
+    CrosshairInSights = true
 }
 
 SWEP.SprintAng = Angle(30, -15, 0)
@@ -188,6 +189,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(26, 32, 6)
 SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
 

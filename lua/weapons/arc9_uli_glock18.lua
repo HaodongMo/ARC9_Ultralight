@@ -55,12 +55,12 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 26 -- Damage done at point blank range
+SWEP.DamageMax = 24 -- Damage done at point blank range
 SWEP.DamageMin = 16 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 1200 -- How far bullets retain their maximum damage for.
+SWEP.RangeMin = 800 -- How far bullets retain their maximum damage for.
 SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
@@ -193,6 +193,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(26, 32, 6)
 SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
 

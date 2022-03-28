@@ -42,8 +42,9 @@ SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_rif_m4a1.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-16, 8, -9),
+    Pos = Vector(-10, 7, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -170,13 +171,14 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-7.95, -6, -0.2),
+    Pos = Vector(-3, -6, -1),
     Ang = Angle(-1.65, 2.5, -4),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
     },
     Magnification = 1.1,
+    CrosshairInSights = true
 }
 
 SWEP.SprintAng = Angle(30, -15, 0)
@@ -191,6 +193,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(26, 32, 6)
 SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
 
@@ -240,7 +243,25 @@ SWEP.Animations = {
     },
     ["idle"] = {
         Source = "idle_unsil"
-    }
+    },
+    ["fire_silenced"] = {
+        Source = {"shoot1", "shoot2", "shoot3"},
+        -- Source = "idle",
+        Mult = 0.5
+    },
+    ["reload_silenced"] = {
+        Source = "reload"
+    },
+    ["draw_silenced"] = {
+        Source = "draw"
+    },
+    ["holster_silenced"] = {
+        Source = "draw",
+        Reverse = true
+    },
+    ["idle_silenced"] = {
+        Source = "idle"
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -249,4 +270,11 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "MUZZLE",
+        Category = "uli_silencer",
+        Bone = "v_weapon.m4_Parent",
+        Pos = Vector(0.152, -4.604, -17.313),
+        Ang = Angle(90, 0, -90),
+    },
 }
