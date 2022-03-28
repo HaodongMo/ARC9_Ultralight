@@ -191,8 +191,8 @@ SWEP.CrouchPos = Vector(-3, -6, 2)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(26, 32, 6)
-SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizePos = Vector(24, 32, 8)
+SWEP.CustomizeSnapshotFOV = 100
 SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
@@ -232,23 +232,32 @@ SWEP.HideBones = {
 
 SWEP.HideBonesSilenced = {}
 
+SWEP.ReloadHideBoneTables = {
+    [1] = {"v_weapon.m4_Silencer"}
+}
+
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1_unsil", "shoot2_unsil", "shoot3_unsil"},
-        Mult = 0.5
+        Mult = 0.5,
+        HideBoneIndex = 1,
     },
     ["reload"] = {
-        Source = "reload_unsil"
+        Source = "reload_unsil",
+        HideBoneIndex = 1,
     },
     ["draw"] = {
-        Source = "draw_unsil"
+        Source = "draw_unsil",
+        HideBoneIndex = 1,
     },
     ["holster"] = {
         Source = "draw_unsil",
+        HideBoneIndex = 1,
         Reverse = true
     },
     ["idle"] = {
-        Source = "idle_unsil"
+        Source = "idle_unsil",
+        HideBoneIndex = 1,
     },
     ["fire_silenced"] = {
         Source = {"shoot1", "shoot2", "shoot3"},

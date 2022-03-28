@@ -215,6 +215,10 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
+SWEP.HideBones = {
+    "v_weapon.M3_SHELL"
+}
+
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "weapons/m3/m3-1.wav"

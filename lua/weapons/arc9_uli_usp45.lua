@@ -188,7 +188,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(26, 32, 6)
-SWEP.CustomizeSnapshotFOV = 110
+SWEP.CustomizeSnapshotFOV = 70
 SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
@@ -220,7 +220,10 @@ SWEP.HideBones = {
 }
 
 SWEP.HideBonesSilenced = {}
-SWEP.ReloadHideBoneTables = false
+
+SWEP.ReloadHideBoneTables = {
+    [1] = {"v_weapon.USP_Silencer"}
+}
 
 -------------------------- SOUNDS
 
@@ -233,20 +236,21 @@ SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1_unsil", "shoot2_unsil", "shoot3_unsil"},
-        Mult = 0.5
+        Mult = 0.5,
+        HideBoneIndex = 1,
     },
     ["reload"] = {
-        Source = "reload_unsil"
+        Source = "reload_unsil",
+        HideBoneIndex = 1,
     },
     ["draw"] = {
-        Source = "draw_unsil"
+        Source = "draw_unsil",
+        HideBoneIndex = 1,
     },
     ["holster"] = {
         Source = "draw_unsil",
+        HideBoneIndex = 1,
         Reverse = true
-    },
-    ["idle"] = {
-        Source = "idle_unsil"
     },
     ["fire_silenced"] = {
         Source = "shoot1",
