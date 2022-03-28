@@ -42,8 +42,9 @@ SWEP.WorldModel = "models/weapons/w_snip_sg550.mdl"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_snip_sg550.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 8, -7),
+    Pos = Vector(-15, 8, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }

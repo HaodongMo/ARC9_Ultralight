@@ -44,7 +44,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_rif_aug.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-16, 8, -9),
+    Pos = Vector(-16, 6.5, -8),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -197,10 +197,10 @@ SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "ar2"
+SWEP.HoldType = "smg"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "ar2"
+SWEP.HoldTypeSights = "smg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

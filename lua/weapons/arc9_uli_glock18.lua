@@ -44,7 +44,7 @@ SWEP.Slot = 1
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_pist_glock18.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-13, 6, -8),
+    Pos = Vector(-18, 8, -6),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -203,6 +203,7 @@ SWEP.HoldTypeHolstered = "normal"
 SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
+SWEP.HoldTypeNPC = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2

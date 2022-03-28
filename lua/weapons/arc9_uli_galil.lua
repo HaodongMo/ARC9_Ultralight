@@ -44,7 +44,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_rif_galil.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-16, 8, -9),
+    Pos = Vector(-14, 7, -8),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }

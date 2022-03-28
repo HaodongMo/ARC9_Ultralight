@@ -45,7 +45,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_shot_m3super90.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 8, -7),
+    Pos = Vector(-12, 8, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -201,7 +201,7 @@ SWEP.HoldTypeSights = "smg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 SWEP.AnimDraw = false
 

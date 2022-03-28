@@ -42,8 +42,9 @@ SWEP.WorldModel = "models/weapons/w_pist_p228.mdl"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_pist_p228.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-13, 6, -8),
+    Pos = Vector(-20, 6, -5),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -198,6 +199,7 @@ SWEP.HoldTypeHolstered = "normal"
 SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
+SWEP.HoldTypeNPC = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2

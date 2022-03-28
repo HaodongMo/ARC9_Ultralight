@@ -44,7 +44,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_rif_m4a1.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 7, -7),
+    Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -225,6 +225,12 @@ SWEP.ShootSoundSilenced = "weapons/m4a1/m4a1-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
+
+SWEP.HideBones = {
+    "v_weapon.m4_Silencer"
+}
+
+SWEP.HideBonesSilenced = {}
 
 SWEP.Animations = {
     ["fire"] = {
