@@ -60,7 +60,7 @@ SWEP.PhysBulletMuzzleVelocity = 22000
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "smg1 -- What ammo type this gun uses.
+SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 150 -- Self-explanatory.
