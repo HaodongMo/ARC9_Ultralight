@@ -171,14 +171,14 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3, -6, -1),
+    Pos = Vector(-7.96, -6, -0.2),
     Ang = Angle(-1.65, 2.5, -4),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
     },
     Magnification = 1.1,
-    CrosshairInSights = true
+    CrosshairInSights = false
 }
 
 SWEP.SprintAng = Angle(30, -15, 0)

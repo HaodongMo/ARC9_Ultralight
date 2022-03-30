@@ -256,7 +256,7 @@ SWEP.Animations = {
         Source = "idle_unsil"
     },
     ["fire_silenced"] = {
-        Source = "shoot1",
+        Source = {"shoot1", "shoot2", "shoot3"},
         Mult = 0.5
     },
     ["reload_silenced"] = {
