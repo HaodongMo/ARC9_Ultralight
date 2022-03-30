@@ -252,6 +252,9 @@ SWEP.Animations = {
         HideBoneIndex = 1,
         Reverse = true
     },
+    ["idle"] = {
+        Source = "idle_unsil"
+    },
     ["fire_silenced"] = {
         Source = "shoot1",
         Mult = 0.5
