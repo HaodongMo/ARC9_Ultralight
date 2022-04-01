@@ -67,7 +67,7 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 10000
+SWEP.PhysBulletMuzzleVelocity = 1280 * 12
 
 -------------------------- MAGAZINE
 
@@ -82,7 +82,7 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 800
+SWEP.RPM = 1000
 
 -- Works different to ArcCW
 
@@ -239,7 +239,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     if swep:Clip1() <= 1 then
         return anim .. "_empty"
-    elseif swep:GetNextPrimaryFire() + 0.15 >= CurTime() then
+    elseif swep:GetNextPrimaryFire() + 0.1 >= CurTime() then
         return anim .. "_chain"
     end
 end

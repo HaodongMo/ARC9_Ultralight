@@ -74,7 +74,7 @@ SWEP.BodyDamageMults = {
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 25000
+SWEP.PhysBulletMuzzleVelocity = 3100 * 12
 
 -------------------------- MAGAZINE
 

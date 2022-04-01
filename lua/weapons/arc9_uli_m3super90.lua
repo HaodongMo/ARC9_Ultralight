@@ -70,7 +70,7 @@ SWEP.Penetration = 1 -- Units of wood that can be penetrated by this gun.
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 10000
+SWEP.PhysBulletMuzzleVelocity = 1250 * 12
 
 -------------------------- MAGAZINE
 

@@ -27,7 +27,6 @@ SWEP.Credits = {
 if ARC9:UseTrueNames() then
 
 SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart, the M4A1 is the full-auto assault rifle of choice for CTs.]]
-
 SWEP.PrintName = SWEP.TrueName
 
 else
@@ -67,7 +66,7 @@ SWEP.Penetration = 6 -- Units of wood that can be penetrated by this gun.
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 26000
+SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 
 -------------------------- MAGAZINE
 
