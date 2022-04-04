@@ -122,6 +122,24 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 
+-------------------------- VISUAL RECOIL
+
+SWEP.RecoilKick = 1
+
+SWEP.UseVisualRecoil = true
+
+SWEP.VisualRecoilUp = 0.01 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
+SWEP.VisualRecoilRoll = 0.2 -- Roll tilt for visual recoil.
+
+SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
+
+SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun.
+
+SWEP.VisualRecoilMult = 1
+
+SWEP.VisualRecoilHipFire = false
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.004

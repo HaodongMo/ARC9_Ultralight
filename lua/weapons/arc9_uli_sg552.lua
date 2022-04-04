@@ -74,7 +74,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 24 -- Self-explanatory.
+SWEP.ClipSize = 20 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -104,7 +104,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 0.75
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
@@ -121,6 +121,24 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
+
+-------------------------- VISUAL RECOIL
+
+SWEP.RecoilKick = 1
+
+SWEP.UseVisualRecoil = true
+
+SWEP.VisualRecoilUp = 0 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
+SWEP.VisualRecoilRoll = 0 -- Roll tilt for visual recoil.
+
+SWEP.VisualRecoilCenter = Vector(7.85, 4, -2.58) -- The "axis" of visual recoil. Where your hand is.
+
+SWEP.VisualRecoilPunch = 0.5 -- How far back visual recoil moves the gun.
+
+SWEP.VisualRecoilMult = 1
+
+SWEP.VisualRecoilHipFire = false
 
 -------------------------- SPREAD
 
@@ -231,6 +249,9 @@ SWEP.Animations = {
         Source = {"shoot1", "shoot2", "shoot3"},
         -- Source = "mac10_idle",
         Mult = 0.5
+    },
+    ["fire_iron"] = {
+        Source = "idle"
     },
     ["reload"] = {
         Source = "reload"

@@ -127,6 +127,24 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.25
 
+-------------------------- VISUAL RECOIL
+
+SWEP.RecoilKick = 1
+
+SWEP.UseVisualRecoil = true
+
+SWEP.VisualRecoilUp = 0.01 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
+SWEP.VisualRecoilRoll = 0.2 -- Roll tilt for visual recoil.
+
+SWEP.VisualRecoilCenter = Vector(8.98, 4, -3.9) -- The "axis" of visual recoil. Where your hand is.
+
+SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun.
+
+SWEP.VisualRecoilMult = 1
+
+SWEP.VisualRecoilHipFire = false
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.0025
@@ -235,6 +253,9 @@ SWEP.Animations = {
         Source = {"shoot1", "shoot2", "shoot3"},
         -- Source = "mac10_idle",
         Mult = 0.5
+    },
+    ["fire_iron"] = {
+        Source = "idle1"
     },
     ["reload"] = {
         Source = "reload"

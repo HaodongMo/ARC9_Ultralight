@@ -74,11 +74,12 @@ SWEP.PhysBulletMuzzleVelocity = 1132 * 12
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 20 -- Self-explanatory.
+SWEP.ClipSize = 17 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
+SWEP.ShootWhileSprint = true
 
 -------------------------- FIREMODES
 
@@ -99,7 +100,7 @@ SWEP.Firemodes = {
     },
     {
         Mode = 3,
-        RPMMult = 1.5
+        RPM = 800
     }
 }
 -------------------------- RECOIL
@@ -230,6 +231,14 @@ SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.Animations = {
     ["fire"] = {
         Source = "glock_firesingle",
+        Mult = 0.5
+    },
+    ["fire_2"] = {
+        Source = "glock_fireburst1",
+        Mult = 0.5
+    },
+    ["fire_3"] = {
+        Source = "glock_fireburst2",
         Mult = 0.5
     },
     ["fire_empty"] = {

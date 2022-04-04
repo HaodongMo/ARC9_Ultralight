@@ -89,7 +89,7 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 350
+SWEP.RPM = 450
 
 -- Works different to ArcCW
 
@@ -127,6 +127,24 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.5
+
+-------------------------- VISUAL RECOIL
+
+SWEP.RecoilKick = 1
+
+SWEP.UseVisualRecoil = true
+
+SWEP.VisualRecoilUp = 0 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
+SWEP.VisualRecoilRoll = 0 -- Roll tilt for visual recoil.
+
+SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
+
+SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun.
+
+SWEP.VisualRecoilMult = 1
+
+SWEP.VisualRecoilHipFire = false
 
 -------------------------- SPREAD
 
@@ -239,6 +257,9 @@ SWEP.Animations = {
         Source = "shoot",
         -- Source = "mac10_idle",
         Mult = 0.5
+    },
+    ["fire_iron"] = {
+        Source = "idle1"
     },
     ["reload"] = {
         Source = "reload"

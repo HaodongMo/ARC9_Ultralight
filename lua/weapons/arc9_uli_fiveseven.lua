@@ -79,6 +79,7 @@ SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an AR
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
+SWEP.ShootWhileSprint = true
 
 -------------------------- FIREMODES
 

@@ -99,7 +99,7 @@ SWEP.Firemodes = {
     },
     {
         Mode = 3,
-        RPMMult = 1.25
+        RPM = 800
         -- add other attachment modifiers
     },
     {
