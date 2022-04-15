@@ -27,11 +27,19 @@ SWEP.Credits = {
 if ARC9:UseTrueNames() then
 
 SWEP.PrintName = SWEP.TrueName
-SWEP.Description = [[The M3's tight spread and devastating punch make it a choice weapon for close-quarters combat.]]
+SWEP.Description = [[The M3's tight spread and devastating punch make it a choice weapon for close-quarters combat. Being a pump-action shotgun, it is capable of chambering a diverse range of shells.
+
+SLUG shells have a single, powerful projectile, good for longer range.
+FRAG shells carry an explosive payload, good against grouped enemies.
+FIRE shells are extremely potent at very close range, but poor at longer distance.]]
 
 else
 
-SWEP.Description = [[The Leone's tight spread and devastating punch make it a choice weapon for close-quarters combat.]]
+SWEP.Description = [[The Leone's tight spread and devastating punch make it a choice weapon for close-quarters combat. Being a pump-action shotgun, it is capable of chambering a diverse range of shells.
+
+SLUG shells have a single, powerful projectile, good for longer range.
+FRAG shells carry an explosive payload, good against grouped enemies.
+FIRE shells are extremely potent at very close range, but poor at longer distance.]]
 
 end
 
@@ -98,7 +106,7 @@ SWEP.RPM = 65
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "PUMP"
+        PrintName = "BUCK"
     },
     {
         Mode = 1,
@@ -108,6 +116,29 @@ SWEP.Firemodes = {
         DamageMinMult = 5,
         RecoilMult = 1.1,
         SpreadMult = 0.35
+    },
+    {
+        Mode = 1,
+        PrintName = "FRAG",
+        Num = 1,
+        RecoilMult = 1.1,
+        SpreadMult = 0.35,
+        ExplosionDamage = 40,
+        ExplosionRadius = 64,
+        ExplosionEffect = "HelicopterMegaBomb",
+        ImpactDecal = "Scorch",
+        PhysBulletMuzzleVelocityMult = 0.5,
+        RicochetChance = 0
+    },
+    {
+        Mode = 1,
+        PrintName = "FIRE",
+        ImpactEffect = "ManhackSparks",
+        ImpactDecal = "SmallScorch",
+        DamageType = DMG_BURN,
+        DamageMaxMult = 1.25,
+        DamageMinMult = 0.25,
+        SpreadMult = 3
     },
 }
 -------------------------- RECOIL

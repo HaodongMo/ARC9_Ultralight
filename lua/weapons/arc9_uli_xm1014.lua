@@ -98,16 +98,8 @@ SWEP.RPM = 400
 SWEP.Firemodes = {
     {
         Mode = 1,
-    },
-    {
-        Mode = 1,
-        PrintName = "SLUG",
-        Num = 1,
-        DamageMaxMult = 7,
-        DamageMinMult = 5,
-        RecoilMult = 1.1,
-        SpreadMult = 0.35
-    },
+        PrintName = "BUCK"
+    }
 }
 -------------------------- RECOIL
 
