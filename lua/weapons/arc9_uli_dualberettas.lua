@@ -83,7 +83,7 @@ SWEP.ShootWhileSprint = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 800
+SWEP.RPM = 1000
 
 -- Works different to ArcCW
 

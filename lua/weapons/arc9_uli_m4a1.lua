@@ -97,8 +97,22 @@ SWEP.Firemodes = {
         -- add other attachment modifiers
     },
     {
-        Mode = 1
+        Mode = -1,
+        PrintName = "SIL",
+        Silencer = true,
+        Hook_TranslateAnimation = function(swep, anim)
+            return anim .. "_silenced"
+        end,
+        RecoilMult = 0.8,
+        SpreadMultSights = 0.75,
+        DamageMaxMult = 0.9,
+        DamageMinMult = 0.9,
+        ShootVolumeMult = 0.8,
+        RPM = 700
     }
+    -- {
+    --     Mode = 1
+    -- }
 }
 -------------------------- RECOIL
 
@@ -210,6 +224,7 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "muzzleflash_5"
+SWEP.MuzzleParticleSilenced = "muzzleflash_suppressed"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.ShellModel = "models/shells/shell_556.mdl"
@@ -276,11 +291,11 @@ SWEP.Animations = {
     ["idle_silenced"] = {
         Source = "idle"
     },
-    ["postcustomize"] = {
+    ["firemode_2"] = {
         Source = "detach_silencer",
         HideBoneIndex = 0,
     },
-    ["postcustomize_silenced"] = {
+    ["firemode_1"] = {
         Source = "add_silencer"
     },
 }
@@ -290,12 +305,4 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {
-    {
-        PrintName = "MUZZLE",
-        Category = "uli_silencer",
-        Bone = "v_weapon.m4_Parent",
-        Pos = Vector(0.152, -4.604, -17.313),
-        Ang = Angle(90, 0, -90),
-    },
-}
+SWEP.Attachments = {}
