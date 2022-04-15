@@ -273,6 +273,13 @@ SWEP.Animations = {
     ["idle_silenced"] = {
         Source = "idle"
     },
+    ["postcustomize"] = {
+        Source = "detach_silencer",
+        HideBoneIndex = 0,
+    },
+    ["postcustomize_silenced"] = {
+        Source = "add_silencer"
+    },
 }
 
 -------------------------- ATTACHMENTS
